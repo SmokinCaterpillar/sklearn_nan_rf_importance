@@ -16,7 +16,7 @@ print('Number of trees with NaN importances:', len(faulty_trees))
 print('Feature importances of the faulty tree',
       faulty_trees[0].feature_importances_)
 
-print('Potnetial cause is impurity 103 with is already: ',
+print('Potential cause is impurity 103 which is already: ',
       faulty_trees[0].tree_.impurity[103])
 
 print('Interestingly, predicting still works:',
