@@ -18,3 +18,6 @@ print('Feature importances of the faulty tree',
 
 print('Potnetial cause is impurity 103 with is already: ',
       faulty_trees[0].tree_.impurity[103])
+
+print('Interestingly, predicting still works:',
+      rf.predict(X[:3, :]))
